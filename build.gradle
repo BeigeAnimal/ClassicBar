@@ -67,8 +67,8 @@ dependencies {
     deobfCompile "com.azanor:Baubles:${baubles_version}"
     //deobfCompile "betterdiving:BetterDiving:${mc_version}-1.3.42"
     deobfProvided "toughasnails:ToughAsNails:${mc_version}:3.1.0.139-universal"
-    deobfProvided "randomthings:RandomThings:MC${mc_version}:4.2.6"
-    deobfCompile "betweenlands:TheBetweenlands:3.4.11-universal"
+    deobfProvided "randomthings:RandomThings:MC${mc_version}:4.2.7.4"
+    deobfCompile "betweenlands:TheBetweenlands:3.7.2-universal"
     deobfCompile "curse.maven:vampirism-become-a-vampire:2832151"
 
     // for more info...

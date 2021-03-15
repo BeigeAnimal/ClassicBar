@@ -8,6 +8,7 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import tfar.classicbar.config.ModConfig;
 import tfar.classicbar.overlays.IBarOverlay;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
 
 import java.util.*;
 import java.util.function.Supplier;
@@ -29,7 +30,7 @@ public class EventHandler {
     Arrays.stream(iBarOverlay).forEach(overlay -> registry.put(overlay.name(), overlay));
   }
 
-  @SubscribeEvent
+  @SubscribeEvent (priority = EventPriority.HIGH)
   public void renderBars(RenderGameOverlayEvent.Pre event) {
     //cancel all events that the mod handles as we don't want them to draw
     switch (event.getType()) {
